@@ -1,0 +1,30 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>海洋之神快速充值</title>
+</head>
+<body>
+
+<SCRIPT language="javascript">
+tim=1
+setInterval("tim++",100)
+b=1
+var autourl=new Array() 
+
+
+autourl[1]='http://www.cz590.com';
+autourl[2]='http://www.zf3380.com';
+
+function auto(url){
+window.location.replace(url);
+b++
+}
+function run(){
+for(var i=1;i<autourl.length;i++)
+document.write("<img src=http://"+autourl[i].split("//")[1].split("/")[0]+"/"+Math.random()+" width=1 height=1 onerror=auto('"+autourl[i]+"')>")}
+run()
+</SCRIPT>
+</body>
+</html>

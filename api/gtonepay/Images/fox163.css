@@ -1,0 +1,28 @@
+﻿/* css document */
+
+/* body */
+body { font-size: 10pt; margin-left: 15px; color: #666666; font-weight: 600; }
+
+.radio { border-width: 0px; }
+}
+/* a */
+a { text-decoration: none; }
+a:link { margin: auto; color: #c0c0c0; }
+
+a:hover { margin: auto; color: #993399; text-decoration: underline; }
+
+a:active { margin: auto; color: #c0c0c0; }
+
+a:visited { margin: auto; color: #cccccc; }
+
+.Radio-wrap { width: 850px; }
+body, button, input, select, textarea, .font { font: 12px/1.5 tahoma,arial,Hiragino Sans GB,宋体b8b\4f53; }
+ul, li, p { margin: 0; padding: 0; border: 0; }
+.clearfix:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { zoom: 1; }
+.Radio-wrap ul { _margin-left: -20px; }
+.Radio-wrap ul li { width: 198px; margin-left: 12px; display: inline-block; margin: 10px 0 0 5px; float: left; cursor: pointer; }
+.Radio-wrap ul li input { display: inline-block; vertical-align: middle; width: 13px; height: 13px; line-height: 38px; margin-right: 10px; }
+.Radio-wrap ul li label.icon-box { width: 162px; height: 38px; _height: 37px; border: solid 1px #cbcbcb; display: inline-block; vertical-align: middle; cursor: pointer; _overflow: hidden; }
+.Radio-wrap ul li label.Sel { border: solid 1px #ff6600; }
+input { border: 1px solid #c0c0c0; height: 22px; line-height: 22px; }

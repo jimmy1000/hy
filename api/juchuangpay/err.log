@@ -1,0 +1,54 @@
+2018-04-09 20:48:42   |  array (
+  'code' => '',
+  'payCode' => 'alipay',
+  'outOrderNo' => '20180409204839455984',
+  'goodsClauses' => 'test',
+  'tradeAmount' => '50.00',
+  'notifyUrl' => 'http://payhy.8889s.com/api/juchuangpay/callback.php',
+  'payState' => 'success',
+  'message' => '',
+  'url' => 'https://qr.alipay.com/upx07608hbschaaqfgxm8064',
+  'content' => '',
+  'payWay' => 'ALIPAY',
+  'shopCode' => 'jc00000525',
+)
+
+2018-04-09 20:48:50   |  array (
+  'merchno' => 'jc00000525',
+)
+
+2018-04-09 20:49:07   |  array (
+  'code' => '',
+  'payCode' => 'alipay',
+  'outOrderNo' => '20180409204904412286',
+  'goodsClauses' => 'test',
+  'tradeAmount' => '50.00',
+  'notifyUrl' => 'http://payhy.8889s.com/api/juchuangpay/callback.php',
+  'payState' => 'success',
+  'message' => '',
+  'url' => 'https://qr.alipay.com/upx00266wucud18grea96027',
+  'content' => '',
+  'payWay' => 'ALIPAY',
+  'shopCode' => 'jc00000525',
+)
+
+2018-04-09 20:50:04   |  array (
+  'code' => '',
+  'payCode' => 'alipay',
+  'outOrderNo' => '',
+  'goodsClauses' => 'test',
+  'tradeAmount' => NULL,
+  'notifyUrl' => 'http://payhy.8889s.com/api/juchuangpay/callback.php',
+  'payState' => 'fail',
+  'message' => '订单匹配不足',
+  'url' => '',
+  'content' => '',
+  'payWay' => 'ALIPAY',
+  'shopCode' => 'jc00000525',
+)
+
+2018-04-09 20:58:12   |  array (
+  'reMsg' => '签名错误',
+  'resultStatus' => 'FAIL',
+)
+

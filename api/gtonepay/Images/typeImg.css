@@ -1,0 +1,20 @@
+﻿.typebank { background: url("bank.png") no-repeat; text-indent: -9999px; }
+.typecard { background: url("cardimg.jpg") no-repeat; text-indent: -9999px; }
+/*银行类*/
+.ABC { background-position: 0 0; /*农业银行*/ }
+.BOC { background-position: 0 -36px; /*中国银行*/ }
+.CCB { background-position: 0 -72px; /*建设银行*/ }
+.CEB { background-position: 0 -108px; /*光大银行*/ }
+.CIB { background-position: 0 -144px; /*兴业银行*/ }
+.CITIC { background-position: 0 -180px; /*中信银行*/ }
+.CMB { background-position: 0 -216px; /*招商银行*/ }
+.CMBC { background-position: 0 -252px; /*民生银行*/ }
+.BOCO { background-position: 0 -288px; /*交通银行*/ }
+.GDB { background-position: 0 -324px; /*广发银行*/ }
+.ICBC { background-position: 0 -360px; /*工商银行*/ }
+.KuaiIconY { background-position: 0 -396px; /*Alipay快捷支付*/ }
+.PSBC { background-position: 0 -432px; /*中国邮政储蓄银行*/ }
+.SDB { background-position: 0 -468px; /*深圳发展银行*/ }
+.SPABANK { background-position: 0 -504px; /*平安银行*/ }
+.SPDB { background-position: 0 -540px; /*浦发银行*/ }
+

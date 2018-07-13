@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="keywords" content="#" />
+<meta name="description" content="#" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="">
+<title>海洋之神-微信|支付宝快速充值中心（秒到账）</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/swipe.tryine.min.js"></script>
+<script type="text/javascript" src="js/channel.min.js"></script>
+<script src="js/demo.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".scrollleft").imgscroll({
+		speed: 40,    //图片滚动速度
+		amount: 0,    //图片滚动过渡时间
+		width: 1,     //图片滚动步数
+		dir: "left"   // "left" 或 "up" 向左或向上滚动
+	});	
+});
+</script>  
+  <style type="text/css">
+			#banklist label{
+				font-size:2em;
+			}
+        </style>
+</head>
+
+<body>
+	<form method="post" id="pay" action="../pay_center.php">
+	<div class="bod">
+    	<div class="header"  style="background:#000"><img src="images/logo.jpg" alt=""></div>
+		<!--焦点图 -->
+        <div id="j_imgSwipe" class="swipe">
+	        <div class="swipe-wrap" data-sudaclick="imgswipe">
+	          <div class="swipe_pic"><a href="#"><img src="images/banner1.jpg" alt="banner"/> </a></div>
+	          <div class="swipe_pic"><a href="#"><img src="images/banner2.jpg" alt="banner"/> </a></div>
+			  <div class="swipe_pic"><a href="#"><img src="images/banner3.jpg" alt="banner"/> </a></div>
+	        </div>
+	        <ul class="swipe_num">
+	          <li class="active"></li>
+	          <li ></li>
+			  <li ></li>
+	        </ul>
+        </div>
+	    <!--焦点图 -->
+
+    <!--滚动条-->
+		<div class="td_f">
+	        <p class="so_p"><img src="images/pic_1.jpg" alt="" /></p>
+	        <a href="#" title="">
+	        <div class="scrollleft">
+	            <ul>
+	              <li>支付流程：输入并确认海洋之神正确的会员账号-输入存款金额-点击确认支付-付款成功后1-10秒自动到账！</li>
+	            </ul>
+	        </div>
+	        </a>
+	    </div>
+
+    <!--滚动条-->
+    <div class="m_at">
+    	<span>会员账号</span>
+        <input type="text" class="select_ipt" name="username" id="username" placeholder="(填写您的会员账号 )" onpaste="return false" onKeyUp="value=value.replace(/[^\w\.\/]/ig,'')" >
+    </div>
+    <div class="m_at">
+    	<span>确认账号</span>
+        <input type="text" class="select_ipt" name="rusername"  id="rusername" placeholder="(填写您的会员账号 )" onpaste="return false" onKeyUp="value=value.replace(/[^\w\.\/]/ig,'')">
+    </div>
+    <div class="m_at">
+    	<span>存款额度</span>
+        <input type="text" class="select_ipt" name="coin" id="coin" placeholder="扫码50-5000元" onKeyUp="value=this.value.replace(/\D+/g,'')">
+    </div>
+    <div class="f_ar">
+    	<div class="f_m1">支付类型</div>
+		  
+		  <div class="f_m2" id="label_alipaywap" style="display:none;" >
+        	<p>
+            	<img src="images/pic_3.jpg" alt="">
+                <span>支付宝APP</span>
+                <em>支付宝APP一键支付</em>
+            </p>
+            <input type="radio" name="bank_code"  id="rad_ALIPAYWAP" value="ALIPAYWAP" class="regular-radio"  /><label for="rad_ALIPAYWAP"></label>
+          </div>
+
+		 <div class="f_m2" id="label_wap" style="display:none;" >
+        	<p>
+            	<img src="images/pic_2.jpg" alt="">
+                <span>微信APP</span>
+                <em>微信APP一键支付</em>
+            </p>
+            <input type="radio" name="bank_code" id="rad_WAP" value="WAP" class="regular-radio" checked /><label for="rad_WAP"></label>
+         </div>
+
+          <div class="f_m2" id="label_tenpay" style="display:none;" >
+        	<p>
+            	<img src="images/ten.png" alt="">
+                <span>财付通APP</span>
+                <em>财付通<font color="#FF0000">支持【网银/信用卡】</font>手机在线支付</em>
+            </p>
+            <input type="radio" name="bank_code" id="rad_TENPAY" value="TENPAY" class="regular-radio" checked /><label for="rad_TENPAY"></label>
+         </div>
+      
+      <div class="f_m2" id="label_qqwappay" style="display:none;" >
+        	<p>
+            	<img src="images/qqqb.png" alt="">
+                <span>手机QQ钱包</span>
+                <em>手机QQ钱包<font color="#FF0000">支持【网银/信用卡】</font>手机在线支付</em>
+            </p>
+            <input type="radio" name="bank_code" id="red_QQWAPPAY" value="QQWAPPAY" class="regular-radio" checked /><label for="red_QQWAPPAY"></label>
+         </div>
+         
+      <div class="f_m2" id="label_bankwap" style="display:none;" >
+        	<p>
+            	<img src="images/bank.jpg" alt="">
+                <span>网银</span>
+                <em>网银手机在线支付</em>
+            </p>
+            <input type="radio" name="bank_code" id="red_bankwap" value="BANKWAP" class="regular-radio" checked /><label for="red_bankwap"></label>
+         </div>
+      <div class="f_m2" id="label_jdpaywap" style="display:none;" >
+        	<p>
+            	<img src="images/jdpay.png" alt="">
+                <span>京东支付</span>
+                <em>京东手机在线支付</em>
+            </p>
+            <input type="radio" name="bank_code" id="red_jdpaywap" value="JDPAYWAP" class="regular-radio" checked /><label for="red_jdpaywap"></label>
+         </div>
+        <div class="f_m2" id="label_alipaycode" style="display:none;" >
+            <p>
+                <img src="images/pic_3.jpg" alt="">
+                <span>支付宝付款码</span>
+                <em>支付宝条码付款</em>
+            </p>
+            <input type="radio" name="bank_code"  id="red_alipaycode" value="ALIPAYCODE" class="regular-radio"  /><label for="red_alipaycode"></label>
+        </div>
+        <div class="f_m2" id="label_weixincode" style="display:none;" >
+            <p>
+                <img src="images/pic_2.jpg" alt="">
+                <span>微信付款码</span>
+                <em>微信条码付款</em>
+            </p>
+            <input type="radio" name="bank_code"  id="red_weixincode" value="WEIXINCODE" class="regular-radio"  /><label for="red_weixincode"></label>
+        </div>
+       <!--<div class="f_m3" id="banklist" style="display:none">
+         	
+			<label for='bankId965'><input type='radio' name='radbank' id='bankId965' alt='建设银行'  value='965' />建设银行</label>
+         
+       		<label for='bankId962'><input type='radio' name='radbank'  id='bankId962' alt='中信银行' value='962' />中信银行</label>
+			<label for='bankId963'><input type='radio' name='radbank' id='bankId963' alt='中国银行' value='963' />中国银行</label>
+			<label for='bankId964'><input type='radio' name='radbank' id='bankId964' alt='农业银行' value='964' />农业银行</label>
+			<label for='bankId965'><input type='radio' name='radbank' id='bankId965' alt='建设银行'  value='965' />建设银行</label>
+			<label for='bankId967'><input type='radio' name='radbank' id='bankId967' alt='工商银行' value='967' />工商银行</label>
+			<label for='bankId968'><input type='radio' name='radbank' id='bankId968' alt='浙商银行' value='968' />浙商银行</label>
+			<label for='bankId969'><input type='radio' name='radbank' id='bankId969' alt='浙江稠州商业银行' value='969' />浙江稠州商业银行</label>
+			<label for='bankId970'><input type='radio' name='radbank' id='bankId970' alt='招商银行' value='970' />招商银行</label>
+			<label for='bankId971'><input type='radio' name='radbank' id='bankId971' alt='邮政储蓄' value='971' />邮政储蓄</label>
+			<label for='bankId972'><input type='radio' name='radbank' id='bankId972' alt='兴业银行' value='972' />兴业银行</label>
+			<label for='bankId973'><input type='radio' name='radbank' id='bankId973' alt='顺德农村信用合作社' value='973' />顺德农村信用合作社</label>
+			<label for='bankId974'><input type='radio' name='radbank' id='bankId974' alt='深圳发展银行' value='974' />深圳发展银行</label>
+			<label for='bankId975'><input type='radio' name='radbank' id='bankId975' alt='上海银行' value='975' />上海银行</label>
+			<label for='bankId976'><input type='radio' name='radbank' id='bankId976' alt='上海农村商业银行' value='976' />上海农村商业银行</label>
+			<label for='bankId977'><input type='radio' name='radbank' id='bankId977' alt='浦发银行' value='977' />浦发银行</label>
+			<label for='bankId978'><input type='radio' name='radbank' id='bankId978' alt='平安银行' value='978' />平安银行</label>
+			<label for='bankId979'><input type='radio' name='radbank' id='bankId979' alt='南京银行' value='979' />南京银行</label>
+			<label for='bankId980'><input type='radio' name='radbank' id='bankId980' alt='民生银行' value='980' />民生银行</label>
+			<label for='bankId981'><input type='radio' name='radbank' id='bankId981' alt='交通银行' value='981' />交通银行</label>
+			<label for='bankId982'><input type='radio' name='radbank' id='bankId982' alt='华夏银行' value='982' />华夏银行</label>
+			<label for='bankId983'><input type='radio' name='radbank' id='bankId983' alt='杭州银行' value='983' />杭州银行</label>
+			<label for='bankId984'><input type='radio' name='radbank' id='bankId984' alt='广州市农村信用社' value='984' />广州市农村信用社</label>
+			<label for='bankId985'><input type='radio' name='radbank' id='bankId985' alt='广东发展银行' value='985' />广东发展银行</label>
+			<label for='bankId986'><input type='radio' name='radbank' id='bankId986' alt='光大银行' value='986' />光大银行</label>
+			<label for='bankId987'><input type='radio' name='radbank' id='bankId987' alt='东亚银行' value='987' />东亚银行</label>
+			<label for='bankId988'><input type='radio' name='radbank' id='bankId988' alt='渤海银行' value='988' />渤海银行</label>
+			<label for='bankId989'><input type='radio' name='radbank' id='bankId989' alt='北京银行' value='989' />北京银行</label>
+			<label for='bankId990'><input type='radio' name='radbank' id='bankId990' alt='北京农村商业银行' value='990' />北京农村商业银行</label>
+       
+       </div>-->
+<!--<label id="label_qqwappay" style="display:none;"><input id="red_QQWAPPAY" name="bank_code" value="QQWAPPAY" type="radio" ><img src="/skin/images/qqwap.png" /></label>-->
+        <div class="f_m3">
+        	<span>存款时间:</span>
+            <input type="text" class="select_ipt" name="P_Time" id="P_Time" value="2016-01-01 00:00:00">
+        </div>
+        <div class="f_m4"><a href="javascript:btnOK_zf_onclick();">确认支付</a></div>
+    </div>
+    <div class="sp_n">
+	        <span style="font-size: 18px;color: #403a38; display: inline-block;text-align: center; width: 100%;">温馨提示</span>
+	        <span>1、微信扫码，支付宝支付单笔5千元以内。</span><br>
+	        <span>2、为了避免掉单情况的发生，请您在支付完成后，等待"支付成功"页面跳转出来后再关闭页面，以免掉单。</span><br>
+	        <span>3、支付未到账？无法支付？请联系<a href="http://messengers.providesupport.net/messenger/1krx7tvqi0eyu08edbrhkbwl9h.html" target="_blank">【在线客服】</a></span>
+	</div>
+
+	
+	<div style="height: 7px;background-color: #eee; display: flex;"></div>
+	<div class="foot">Copyright &copy; 海洋之神 版权所有</div>    
+    
+    </div>
+   </form>
+</body>
+</html>
+
+<script type="text/javascript">
+	function getNowFormatDate() {
+	    var date = new Date();
+	    var seperator1 = "-";
+	    var seperator2 = ":";
+	    var year = date.getFullYear();
+	    var month = date.getMonth() + 1;
+	    var strDate = date.getDate();
+	    if (month >= 1 && month <= 9) {
+	        month = "0" + month;
+	    }
+	    if (strDate >= 0 && strDate <= 9) {
+	        strDate = "0" + strDate;
+	    }
+	    var currentdate = year + seperator1 + month + seperator1 + strDate
+	            + " " + date.getHours() + seperator2 + date.getMinutes()
+	            + seperator2 + date.getSeconds();
+	    return currentdate;
+	}
+  $(function(){
+	  var time = getNowFormatDate();
+	  $('#P_Time').val(time);
+	  $(".f_m2 label").click(function(){
+	  	 $(this).siblings('input').attr('checked', true);
+		  	if($(this).siblings('input').val() == 'BANKWAP'){
+				$("#banklist").show();
+			}else{
+				$("#banklist").hide();
+			}
+	  })
+	  $.ajax({
+			url:'../ajax.php?action=open',
+			dataType:'json',
+			type: 'GET',
+			success:function(obj){
+                if(obj.tenpay == "0"){
+					$('#label_tenpay').show();
+					$("#rad_TENPAY").attr("checked","checked");
+				}
+			    if(obj.wechatwap == "0"){
+					$('#label_wap').show();
+					$("#rad_WAP").attr("checked","checked");
+				}
+				if(obj.wechat == "0"){
+					$('#label_wechat').show();
+					$("#rad_WEIXIN").attr("checked","checked");
+				}
+				if(obj.alipaywap == "0"){
+					$('#label_alipaywap').show();					
+					$("#rad_ALIPAYWAP").attr("checked","checked");
+				}
+				if(obj.alipay == "0"){
+					$('#label_alipay').show();					
+					$("#rad_ALIPAY").attr("checked","checked");
+				}
+				if(obj.bankwap == "0"){
+                   $("#label_bankwap").show();
+                   $("#red_bankwap").trigger('click');
+                   $("#banklist").show();
+                 }
+              	if(obj.qqwappay == "0"){
+                  $("#label_qqwappay").show();
+                  $("#red_qqwappay").attr("checked","checked");
+                }
+                if(obj.jdpaywap == "0"){
+                    $("#label_jdpaywap").show();
+                    $("#red_jdpaywap").attr("checked","checked");
+                }
+                if(obj.alipaycode == "0"){
+                    $("#label_alipaycode").show();
+                    $("#red_alipaycode").attr("checked","checked");
+                }
+                if(obj.weixincode == "0"){
+                    $("#label_weixincode").show();
+                    $("#red_weixincode").attr("checked","checked");
+                }
+
+
+			}
+		})
+  })
+  function btnOK_zf_onclick(){
+		var username = $("#username").val();
+		var usern = /^[a-zA-Z0-9]{1,}$/;
+		 if(!usern.test(username)){
+			alert('会员帐号只能由数字、大小写字母组成!'); 
+			return false;
+		 }
+		  var rusername = $("#rusername").val();
+		  var coin = $("#coin").val();
+		   var bankck = $('input[name="bank_code"]:checked').val();  
+		  if(username==null ||username==""){
+		    alert("[提示]游戏账户不能为空！");
+	   	  return false;
+	   	}
+		  if(username != rusername){
+		   alert("[提示]两次输入的游戏账户不一致！");
+	   	   return false;
+	   	}
+	  	if(isNaN(coin)){
+	   		alert("[提示]存款额度非有效数字！");
+	   		return false;
+	   	}
+		
+	   	if(coin<1){
+		     alert("[提示]1以上才能存款！");
+	   	   return false;
+	   	}
+	   	if(coin>5000){
+		     alert("[提示]存款金额不能超过5000！");
+	   	   return false;
+	   	}
+
+		if(rusername==null ||rusername=="" || rusername!=username ){
+	      alert("[提示]2次用户输入不一致！");
+   	      return false;
+   	    }
+  	  	$.ajax({
+			url: '../ajax.php?action=weihu',
+			dataType: 'json',
+			data: {bank_name : bankck},
+			cache: false,
+			type: 'POST',
+			success: function (obj) {  
+				if(obj.stat == 0){
+					 $("#pay").submit();
+					 return true;
+				}else{
+					alert(obj.msg);
+					return false;
+				}
+			},
+			error: function(XMLHttpRequest, textStatus, errorThrown) {
+				var x = 1;
+			}
+		}) 	
+  }
+</script>

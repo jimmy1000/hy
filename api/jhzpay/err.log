@@ -1,0 +1,65 @@
+2018-03-27 19:45:58   |  NULL
+array (
+  'status_code' => -1,
+  'status_msg' => 'app_id不存在',
+  'pay_seq' => '',
+)
+
+2018-03-27 19:46:06   |  NULL
+array (
+  'status_code' => -1,
+  'status_msg' => 'app_id不存在',
+  'pay_seq' => '',
+)
+
+2018-03-27 19:46:15   |  NULL
+array (
+  'status_code' => -1,
+  'status_msg' => 'app_id不存在',
+  'pay_seq' => '',
+)
+
+2018-03-27 19:46:39   |  NULL
+array (
+  'status_code' => -1,
+  'status_msg' => 'app_id不存在',
+  'pay_seq' => '',
+)
+
+2018-03-27 19:58:06   |  NULL
+array (
+  'status_code' => -1,
+  'status_msg' => 'app_id不存在',
+  'pay_seq' => '',
+)
+
+2018-03-27 19:58:19   |  NULL
+array (
+  'status_code' => -1,
+  'status_msg' => 'app_id不存在！',
+  'pay_seq' => '',
+)
+
+2018-03-27 19:58:25   |  NULL
+array (
+  'status_code' => -1,
+  'status_msg' => 'app_id不存在',
+  'pay_seq' => '',
+)
+
+2018-03-27 19:58:41   |  NULL
+array (
+  'status_code' => -1,
+  'status_msg' => 'app_id不存在！',
+  'pay_seq' => '',
+)
+
+2018-03-30 15:48:09   |  NULL
+NULL
+
+2018-03-30 16:07:20   |  NULL
+array (
+  'msg' => '系统异常',
+  'code' => '9001',
+)
+

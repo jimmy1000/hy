@@ -1,0 +1,380 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>海洋之神快速充值中心</title>
+  <link href="skin/css/css.css?v1" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="skin/js/jquery.js"></script>
+  <script type="text/javascript">
+      function getNowFormatDate() {
+          var date = new Date();
+          var seperator1 = "-";
+          var seperator2 = ":";
+          var year = date.getFullYear();
+          var month = date.getMonth() + 1;
+          var strDate = date.getDate();
+          if (month >= 1 && month <= 9) {
+              month = "0" + month;
+          }
+          if (strDate >= 0 && strDate <= 9) {
+              strDate = "0" + strDate;
+          }
+          var currentdate = year + seperator1 + month + seperator1 + strDate
+              + " " + date.getHours() + seperator2 + date.getMinutes()
+              + seperator2 + date.getSeconds();
+          return currentdate;
+      }
+      function browserRedirect() {
+          var sUserAgent = navigator.userAgent.toLowerCase();
+          var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+          var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+          var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+          var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+          var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+          var bIsAndroid = sUserAgent.match(/android/i) == "android";
+          var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+          var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+          if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+
+          }else{
+              window.location.href='wap/index.html';
+          }
+      }
+      browserRedirect();
+  </script>
+
+
+</head>
+<body>
+<div class="box">
+  <h1 class="logo">
+    <img src="skin/images/logo.png">
+  </h1>
+  <form method="post" id="pay" action="pay_center.php">
+    <div class="mian">
+      <h2 class="bt"><font size="4">支持【<b><font color="#FF00FF">手机端</font></b>、电脑端】<b><font color="#00FF00">微信扫码支付</font>、<font color="#0000FF">支付宝（扫码支付/登入账户付款）</font></b>付款成功自动到账！</font><br>
+        <font size="3">支付流程：输入并确认海洋之神正确的会员账号→输入存款额度→点击确认支付→付款成功后<b><font color="#FF0000">1~10秒</font><font color="#0000FF">自动到账</font></b>；<br>存款金额范围为（<span style="font-weight: 400"><b><font color="#FF0000">50~5000元</font></b></span>）需要大额入款可分多次存入或使用其它方式存款；<br>
+          若客户担心，可先测试50元小额支付，或联系<b><font color="#FF0000"><a target="_blank" href="https://messengers.providesupport.net/messenger/1krx7tvqi0eyu08edbrhkbwl9h.html" style="text-decoration: none"><font color="#FF0000">【在线客服】</font></a></font></b>确认！</font></h2>
+      <div class="cn">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="144" bgcolor="#f6f6f6" class="w1">会员帐号：</td>
+            <td width="600"><input name="username" id="username" type="text" class="text"  onpaste="return false" onKeyUp="value=value.replace(/[^\w\.\/]/ig,'')"><font size="4" color="#FF0000"></font><font size="4" color="#FF0000">
+            </font>@590 <font color="#FF0000">输入海洋之神会员账号 </font>（无需+@590）</td>
+            <td align="center"><font color="#FF0000">*</font>必填</td>
+          </tr>
+          <tr>
+            <td bgcolor="#f6f6f6" class="w1">确认帐号：</td>
+            <td><input name="rusername"  id="rusername" type="text" class="text"  onpaste="return false" onKeyUp="value=value.replace(/[^\w\.\/]/ig,'')"><font size="4" color="#FF0000"></font><font size="4" color="#FF0000">
+            </font>@590 <font color="#FF0000">请确认会员账号是否正确，否则无法正常充值</font></td>
+            <td align="center"><font color="#FF0000">*</font>必填</td>
+          </tr>
+          <tr>
+            <td bgcolor="#f6f6f6" class="w1">支付类型：</td>
+            <td class="paytype">
+              <style>
+                .paytype label img{width:150px;}
+              </style>
+
+              <label id="label_alipaycode" style="display:none;"><input type="radio" id="rad_ALIPAYCODE1" name="bank_code" value="ALIPAYCODE" ><img src="skin/images/2zfb.png"></label>
+              <label id="label_weixincode" style="display:none;"><input type="radio" id="rad_WEIXINCODE1" name="bank_code" value="WEIXINCODE" ><img src="skin/images/1weix.png"></label>
+              <label id="label_alipay" style="display:none;"><input type="radio" id="rad_ALIPAY" name="bank_code" value="ALIPAY" ><img src="skin/images/alipay.png"></label>
+              <label id="label_wechat" style="display:none;"><input type="radio" id="rad_WEIXIN" name="bank_code" value="WECHAT" ><img src="skin/images/wechat.png"></label>
+              <label id="label_tenpay" style="display:none;"><input type="radio" id="rad_TENPAY" name="bank_code" value="TENPAY" ><img src="skin/images/tenpay.png"></label>
+              <label id="label_bank" style="display:none;"><input type="radio" id="rad_BANK" name="bank_code" value="BANK" ><img src="skin/images/bank.png"></label>
+              <label id="label_tenpay" style="display:none;"><input id="rad_TENPAY" name="bank_code" value="TENPAY" type="radio" /><img src="skin/images/tenpay.png" /></label>
+              <label id="label_qqpay" style="display:none;"><input id="rad_QQPAY" name="bank_code" value="QQPAY" type="radio" /><img src="/skin/images/qqpay.png" /></label>
+              <label id="label_diankapay" style="display:none;"><input type="radio" id="rad_DIANKAPAY" name="bank_code" value="DIANKAPAY" /><img src="/skin/images/diankapay.png" /></label>
+              <label id="label_jdpay" style="display:none;"><input type="radio" id="rad_JDPAY" name="bank_code" value="JDPAY" /><img src="/skin/images/jdpay.png" /></label>
+              <label id="label_bankscan" style="display:none;"><input type="radio" id="rad_BANKSCAN" name="bank_code" value="BANKSCAN" /><img src="/skin/images/bankscan.png" /></label>
+              <label id="label_bankquick" style="display:none;"><input type="radio" id="rad_BANKQUICK" name="bank_code" value="BANKQUICK" /><img src="/skin/images/bankscan.png" /></label>
+              <!--<label id="label_kjzf" style="display:none;"><input type="radio" id="rad_kjzf" name="bank_code" value="KJZF" /><img src="/skin/images/kjzf.png" /></label>-->
+
+            </td>
+            <td align="center">财付通<font color="#FF0000"><b>支持网银/信用卡</b></font></td>
+          </tr>
+          <!--tr id='banklist' style="display:none;">
+              <td td bgcolor="#f6f6f6" class="w1">选择银行</td>
+              <td>
+   <label for="ICBC"><input type="radio" name="radbank" id="ICBC" checked="checked"  value="ICBC"/><img src="/bankimg/gongshang.jpg" />  </label>
+    <label for="BOC"><input type="radio" name="radbank" id="BOC" value="BOC"/><img src="/bankimg/zhongguo.jpg" />    </label>
+    <label for="CCB"><input type="radio" name="radbank" id="CCB" value="CCB"/><img src="/bankimg/jianshe.jpg" />  </label> <br/>
+    <label for="CIB"><input type="radio" name="radbank" id="CIB" value="CIB"/><img src="/bankimg/xingye.jpg" />  </label>
+    <label for="PINGANBANK"><input type="radio" name="radbank" id="PINGANBANK" value="PINGANBANK"/><img src="/bankimg/pingan.jpg">  </label>
+    <label for="CMBC"><input type="radio" name="radbank" id="CMBC" value="CMBC"/><img src="/bankimg/mingsheng.jpg">  </label> <br/>
+    <label for="GDB"><input type="radio" name="radbank" id="GDB" value="GDB"/><img src="/bankimg/guangfa.jpg">  </label>
+    <label for="ABC"><input type="radio" name="radbank" id="ABC" value="ABC"/><img src="/bankimg/nongye.jpg">  </label>
+    <label for="NJCB"><input type="radio" name="radbank" id="NJCB" value="NJCB"/><img src="/bankimg/nanjing.jpg">  </label> <br/>
+    <label for="CMB"><input type="radio" name="radbank" id="CMB" value="CMB"/><img src="/bankimg/zhaoshang.jpg">  </label>
+    <label for="BOCO"><input type="radio" name="radbank" id="BOCO" value="BOCO"/><img src="/bankimg/jiaotong.jpg">  </label>
+    <label for="CEB"><input type="radio" name="radbank" id="CEB" value="CEB"/><img src="/bankimg/guangda.jpg">  </label> <br/>
+    <label for="PSBS"><input type="radio" name="radbank" id="PSBS" value="PSBS"/><img src="/bankimg/youzheng.jpg">  </label>
+              </td>
+          </tr-->
+          <tr id="diankalist" style="display:none;">
+            <td bgcolor="#f6f6f6" class="w1">充值方式：</td>
+            <td>
+              <label for='diankaId10'><input type='radio' name='raddianka' id='diankaId10'  value='10' />10元充值卡</label>
+              <label for='diankaId20'><input type='radio' name='raddianka' id='diankaId20'  value='20' />20元充值卡</label>
+              <label for='diankaId30'><input type='radio' name='raddianka' id='diankaId30'  value='30' />30元充值卡</label>
+              <label for='diankaId50'><input type='radio' name='raddianka' id='diankaId50'  value='50' />50元充值卡</label><br/>
+              <label for='diankaId100'><input type='radio' name='raddianka' id='diankaId100'  value='100' />100元充值卡</label>
+              <label for='diankaId200'><input type='radio' name='raddianka' id='diankaId200'  value='200' />200元充值卡</label>
+              <label for='diankaId300'><input type='radio' name='raddianka' id='diankaId300'  value='300' />300元充值卡</label>
+              <label for='diankaId500'><input type='radio' name='raddianka' id='diankaId500'  value='500' />500元充值卡</label><br/>
+              <label for='diankaId1000'><input type='radio' name='raddianka' id='diankaId1000'  value='1000' />1000元充值卡</label>
+              <label for='diankaId2000'><input type='radio' name='raddianka' id='diankaId2000'  value='2000' />2000元充值卡</label>
+              <label for='diankaId3000'><input type='radio' name='raddianka' id='diankaId3000'  value='3000' />3000元充值卡</label>
+              <label for='diankaId5000'><input type='radio' name='raddianka' id='diankaId5000'  value='5000' />5000元充值卡</label><br/>
+              <label for='diankaId10000'><input type='radio' name='raddianka' id='diankaId10000'  value='10000' />10000元充值卡</label>
+            </td>
+          </tr>
+
+          <tr id="banklist" style="display:none;">
+            <td bgcolor="#f6f6f6" class="w1">选择面值：</td>
+            <td>
+              <label for='bankId962'><input type='radio' name='radbank' id='bankId962' alt='中信银行' value='962' /><img src='/bankimg/zhongxin.jpg' /></label>
+              <label for='bankId963'><input type='radio' name='radbank' id='bankId963' alt='中国银行' value='963' /><img src='/bankimg/zhongguo.jpg' /></label>
+              <label for='bankId964'><input type='radio' name='radbank' id='bankId964' alt='农业银行' value='964' /><img src='/bankimg/nongye.jpg' /></label><br/>
+              <label for='bankId965'><input type='radio' name='radbank' id='bankId965' alt='建设银行'  value='965' /><img src='/bankimg/jianshe.jpg' /></label>
+              <label for='bankId967'><input type='radio' name='radbank' id='bankId967' alt='工商银行' value='967' /><img src='/bankimg/gongshang.jpg' /></label>
+              <label for='bankId968'><input type='radio' name='radbank' id='bankId968' alt='浙商银行' value='968' /><img src='/bankimg/zheshang.jpg' /></label><br/>
+              <label for='bankId969'><input type='radio' name='radbank' id='bankId969' alt='浙江稠州商业银行' value='969' /><img src='/bankimg/zhejiangchouzhou.jpg' /></label>
+              <label for='bankId970'><input type='radio' name='radbank' id='bankId970' alt='招商银行' value='970' /><img src='/bankimg/zhaoshang.jpg' /></label>
+              <label for='bankId971'><input type='radio' name='radbank' id='bankId971' alt='邮政储蓄' value='971' /><img src='/bankimg/youzheng.jpg' /></label><br/>
+              <label for='bankId972'><input type='radio' name='radbank' id='bankId972' alt='兴业银行' value='972' /><img src='/bankimg/xingye.jpg' /></label>
+              <label for='bankId973'><input type='radio' name='radbank' id='bankId973' alt='顺德农村信用合作社' value='973' /><img src='/bankimg/shundenongshang.jpg' /></label>
+              <label for='bankId974'><input type='radio' name='radbank' id='bankId974' alt='深圳发展银行' value='974' /><img src='/bankimg/shenzhenfazhan.jpg' /></label><br/>
+              <label for='bankId975'><input type='radio' name='radbank' id='bankId975' alt='上海银行' value='975' /><img src='/bankimg/shanghai.jpg' /></label>
+              <label for='bankId976'><input type='radio' name='radbank' id='bankId976' alt='上海农村商业银行' value='976' /><img src='/bankimg/shanghainongshang.jpg' /></label>
+              <label for='bankId977'><input type='radio' name='radbank' id='bankId977' alt='浦发银行' value='977' /><img src='/bankimg/pufa.jpg' /></label><br/>
+              <label for='bankId978'><input type='radio' name='radbank' id='bankId978' alt='平安银行' value='978' /><img src='/bankimg/pingan.jpg' /></label>
+              <label for='bankId979'><input type='radio' name='radbank' id='bankId979' alt='南京银行' value='979' /><img src='/bankimg/nanjing.jpg' /></label>
+              <label for='bankId980'><input type='radio' name='radbank' id='bankId980' alt='民生银行' value='980' /><img src='/bankimg/mingsheng.jpg' /></label><br/>
+              <label for='bankId981'><input type='radio' name='radbank' id='bankId981' alt='交通银行' value='981' /><img src='/bankimg/jiaotong.jpg' /></label>
+              <label for='bankId982'><input type='radio' name='radbank' id='bankId982' alt='华夏银行' value='982' /><img src='/bankimg/huaxia.jpg' /></label>
+              <label for='bankId983'><input type='radio' name='radbank' id='bankId983' alt='杭州银行' value='983' /><img src='/bankimg/hangzhou.jpg' /></label><br/>
+              <label for='bankId984'><input type='radio' name='radbank' id='bankId984' alt='广州市农村信用社' value='984' /><img src='/bankimg/guangzhoushishangye.jpg' /></label>
+              <label for='bankId985'><input type='radio' name='radbank' id='bankId985' alt='广东发展银行' value='985' /><img src='/bankimg/guangfa.jpg' /></label>
+              <label for='bankId986'><input type='radio' name='radbank' id='bankId986' alt='光大银行' value='986' /><img src='/bankimg/guangda.jpg' /></label><br/>
+              <label for='bankId987'><input type='radio' name='radbank' id='bankId987' alt='东亚银行' value='987' /><img src='/bankimg/dongya.jpg' /></label>
+              <label for='bankId988'><input type='radio' name='radbank' id='bankId988' alt='渤海银行' value='988' /><img src='/bankimg/bohai.jpg' /></label>
+              <label for='bankId989'><input type='radio' name='radbank' id='bankId989' alt='北京银行' value='989' /><img src='/bankimg/beijing.jpg' /></label><br/>
+              <label for='bankId990'><input type='radio' name='radbank' id='bankId990' alt='北京农村商业银行' value='990' /><img src='/bankimg/beijingnongshang.jpg' /></label>
+            </td>
+          </tr>
+
+          <tr id="kjzflist" style="display:none;">
+            <td bgcolor="#f6f6f6" class="w1">选择银行：</td>
+            <td>
+              <label for='bankId2000'><input type='radio' name='radbank' id='bankId2000' alt='中信银行' value='2000' /><img src='/bankimg/zhongxin.jpg' /></label>
+              <label for='bankId2001'><input type='radio' name='radbank' id='bankId2001' alt='中国银行' value='2001' /><img src='/bankimg/zhongguo.jpg' /></label>
+              <label for='bankId2002'><input type='radio' name='radbank' id='bankId2002' alt='建设银行'  value='2002' /><img src='/bankimg/jianshe.jpg' /></label><br/>
+              <label for='bankId2003'><input type='radio' name='radbank' id='bankId2003' alt='工商银行' value='2003' /><img src='/bankimg/gongshang.jpg' /></label>
+              <label for='bankId2006'><input type='radio' name='radbank' id='bankId2006' alt='招商银行' value='2006' /><img src='/bankimg/zhaoshang.jpg' /></label>
+              <label for='bankId2008'><input type='radio' name='radbank' id='bankId2008' alt='兴业银行' value='2008' /><img src='/bankimg/xingye.jpg' /></label><br/>
+              <label for='bankId2012'><input type='radio' name='radbank' id='bankId2012' alt='浦发银行' value='2012' /><img src='/bankimg/pufa.jpg' /></label>
+              <label for='bankId2013'><input type='radio' name='radbank' id='bankId2013' alt='平安银行' value='2013' /><img src='/bankimg/pingan.jpg' /></label>
+              <label for='bankId2019'><input type='radio' name='radbank' id='bankId2019' alt='广州市农村信用社' value='2019' /><img src='/bankimg/guangzhoushishangye.jpg' /></label><br/>
+              <label for='bankId2020'><input type='radio' name='radbank' id='bankId2020' alt='广东发展银行' value='2020' /><img src='/bankimg/guangfa.jpg' /></label>
+              <label for='bankId2021'><input type='radio' name='radbank' id='bankId2021' alt='光大银行' value='2021' /><img src='/bankimg/guangda.jpg' /></label>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#f6f6f6" class="w1">存款额度：</td>
+            <td><input name="coin" type="text" class="text" id="coin" onKeyUp="value=this.value.replace(/\D+/g,'')">存款金额范围（<font color="#FF0000"><b>50~5000元</b></font>）</td>
+            <td align="center"><font color="#FF0000">*</font>必填</td>
+          </tr>
+          <tr>
+            <td bgcolor="#f6f6f6" class="w1">存款时间：</td>
+            <td><input type="text" class="text" name="P_Time" id="P_Time" value=""><font color="#0000FF">自动写入无需填写</font></td>
+            <td align="center">590.cc</td>
+          </tr>
+        </table>
+      </div>
+      <a href="#" class="btn" onClick="return btnOK_zf_onclick();">确认支付</a>
+      <div class="botm"><font size="3">为了避免掉单情况的发生，请您在支付完成后，等待"支付成功"页面跳转出来后再关闭页面，以免掉单；</font>
+        <p><font size="3">支付成功后，若3分钟内未能及时到达您的会员账号请联系<b><font color="#FF0000"><a href="https://messengers.providesupport.net/messenger/1krx7tvqi0eyu08edbrhkbwl9h.html" target="_blank"><font color="#FF0000">【在线客服】</font></a></font></b>咨询；</font></p>
+        <p><font size="3">海洋之神祝您游戏愉快，盈利多多！O(∩_∩)O</font>　　</div>
+    </div>
+  </form>
+</div>
+<div class="bottom">Copyright @590 <font size="3">海洋之神</font> Reserved 590.cc</div>
+
+<div id="TplFloatPic_1" class="TplFloatSet" style="position:absolute;cursor:pointer;display:none;" picfloat="right">
+  <a href="https://messengers.providesupport.net/messenger/1krx7tvqi0eyu08edbrhkbwl9h.html"  target="_blank"><img src="skin/images/online.png" alt="" class="png_fix" /></a>
+  <a onclick="FloatClose(this);"><img src="skin/images/close.png" alt="" style="display:block;" class="png_fix" /></a>
+</div>
+<script type="text/javascript" src="skin/js/float.js"></script>
+
+
+
+</body>
+</html>
+<script type="text/javascript">
+    $(function(){
+        $("input[name=bank_code]").click(function(){
+            if($(this).attr('value') == 'BANK'){
+                $("#banklist").show();
+            }else{
+                $("#banklist").hide();
+            }
+            if($(this).attr('value') == 'KJZF'){
+                $("#kjzflist").show();
+            }else{
+                $("#kjzflist").hide();
+            }
+        })
+    })
+
+    $(function(){
+        $("input[name=bank_code]").click(function(){
+            if($(this).attr('value') == 'DIANKAPAY'){
+                $("#diankalist").show();
+                $("#coin").attr('readonly',true).css("background","#ccc");
+                $("#diankaId100").attr({"checked":"checked"});
+                $("#coin").val("100");
+            }else{
+                $("#diankalist").hide();
+                $("#coin").removeAttr("readonly").css("background","#fff")	;
+            }
+        })
+    })
+
+    $(function(){
+        $("input[name=raddianka]").click(function(){
+            $("#coin").val($(this).attr("value"));
+        })
+    })
+
+    $(function(){
+        var time = getNowFormatDate();
+        $('#P_Time').val(time);
+
+        $.ajax({
+            url:'ajax.php?action=open',
+            dataType:'json',
+            type: 'GET',
+            success:function(obj){0
+                if(obj.tenpay == "0"){
+                    $('#label_tenpay').show();
+                    //$("#rad_TENPAY").attr("checked","checked");
+                }
+
+                if(obj.wechat == "0"){
+                    $('#label_wechat').show();
+                    //$("#rad_WEIXIN").attr("checked","checked");
+                }
+
+                if(obj.weixincode == "0"){
+                    $('#label_weixincode').show();
+                    //$("#rad_WEIXIN").attr("checked","checked");
+                }
+
+                if(obj.alipay == "0"){
+                    $('#label_alipay').show();
+                    //$("#rad_ALIPAY").attr("checked","checked");
+                }
+
+                if(obj.alipaycode == "0"){
+                    $('#label_alipaycode').show();
+                    //$("#rad_ALIPAY").attr("checked","checked");
+                }
+
+                if(obj.bank == "0"){
+                    $('#label_bank').show();
+                    //$("#rad_BANK").attr("checked","checked");
+                }
+                if(obj.bankquick == "0"){
+                    $('#label_bankquick').show();
+                    //$("#rad_BANK").attr("checked","checked");
+                }
+
+                if(obj.qqwappay == "0"){
+                    $('#label_qqwappay').show();
+                    //$("#red_QQWAPPAY").attr("checked","checked");
+                }
+
+                if(obj.qqpay == "0"){
+                    $('#label_qqpay').show();
+                    //$("#red_QQPAY").attr("checked","checked");
+                }
+
+                if(obj.diankapay == "0"){
+                    $('#label_diankapay').show();
+                    //$("#red_DIANKAPAY").attr("checked","checked");
+                }
+
+                if(obj.jdpay == "0"){
+                    $('#label_jdpay').show();
+                    //$("#red_JDPAY").attr("checked","checked");
+                }
+
+                if(obj.kjzf == '0'){
+                    $("#label_kjzf").show();
+                }
+
+                if(obj.kjzf == '0'){
+                    $("#label_bankscan").show();
+                }
+
+            }
+        })
+
+    })
+
+    function btnOK_zf_onclick(){
+        var username = $("#username").val();
+        var usern = /^[a-zA-Z0-9]{1,}$/;
+        if(!usern.test(username)){
+            alert('会员帐号只能由数字、大小写字母组成!');
+            return false;
+        }
+        var coin = $("#coin").val();
+        var bankck = $('input[name="bank_code"]:checked').val();
+        var rusername = $("#rusername").val();
+        if(isNaN(coin)){
+            alert("[提示]存款额度非有效数字！");
+            return false;
+        }
+        if(coin<10){
+            alert("[提示]10元以上或者10元才能存款！");
+            return false;
+        }
+        if(coin>5000){
+            alert("[提示]存款金额不能超过5000！");
+            return false;
+        }
+        if(username==null ||username==""){
+            alert("[提示]用户名不能为空！");
+            return false;
+        }
+        if(rusername==null ||rusername=="" || rusername!=username ){
+            alert("[提示]2次用户输入不一致！");
+            return false;
+        }
+        $.ajax({
+            url: 'ajax.php?action=weihu',
+            dataType: 'json',
+            data: {bank_name : bankck},
+            cache: false,
+            type: 'POST',
+            success: function (obj) {
+                if(obj.stat == 0){
+                    $("#pay").submit();
+                    return true;
+                }else{
+                    alert(obj.msg);
+                    return false;
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                var x = 1;0.
+            }
+        })
+
+    }
+</script>

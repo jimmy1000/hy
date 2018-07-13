@@ -1,0 +1,10 @@
+<xml>
+	<body>在线支付</body>
+	<mch_create_ip>118.99.60.16</mch_create_ip>
+	<mch_id>1000116</mch_id>
+	<nonce_str>63074b445e3519b302a0a48f6eecff71</nonce_str>
+	<notify_url>http://www.baidu.com</notify_url>
+	<out_trade_no>HB5A5C40C7E2437</out_trade_no>
+	<total_fee>1000</total_fee>
+	<sign>8AD52677F5B5F3738E50E615A717051B</sign>
+</xml>

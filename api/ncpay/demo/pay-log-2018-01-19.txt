@@ -1,0 +1,44 @@
+2018-01-19 16:16:56 支付回调成功, 数据:{"merId":"100000010000015","merOrderNo":"1516349629959","orderAmt":"1.00","orderDesc":"1213123","orderTitle":"\u8ba2\u5355\u6807\u9898Test","payDate":"2018-01-19","payNo":"2018011916135403251340131","payStatus":"S","payTime":"16:16:53","realAmt":"1.15","sign":"5561273d806d75ae5889060bcb0489f8","version":"1.0.0"}
+
+2018-01-19 16:20:36 下单(1516350034019)发送报文: {"merOrderNo":"1516350034019","orderAmt":"1","payPlat":"alipay","orderTitle":"订单标题Test","orderDesc":"1213123","notifyUrl":"http:\/\/photo123.cn\/phpdemo\/pay_notify.php","callbackUrl":"http:\/\/photo123.cn\/phpdemo\/pay_result.php","merId":"100000010000015","version":"1.0.0","sign":"7a14047aa2f57e86d01b4a5c4e68a2ee"}
+
+2018-01-19 16:20:36 下单(1516350034019)返回报文: {"respCode":"0015","respMsg":"商户未配置第三方支付账号"}
+
+2018-01-19 16:20:36 下单(1516350034019) 请求错误(0015:商户未配置第三方支付账号)
+
+2018-01-19 16:20:43 下单(1516350042229)发送报文: {"merOrderNo":"1516350042229","orderTitle":"支付测试demo","orderDesc":"描述","payPlat":"alipay","orderAmt":"1","notifyUrl":"http:\/\/photo123.cn\/phpdemo\/pay_notify.php","callbackUrl":"http:\/\/photo123.cn\/phpdemo\/pay_result.php","merId":"100000010000015","version":"1.0.0","sign":"77397dbeae02a8ca33a5402383caa8ce"}
+
+2018-01-19 16:20:43 下单(1516350042229)返回报文: {"respCode":"0015","respMsg":"商户未配置第三方支付账号"}
+
+2018-01-19 16:20:43 下单(1516350042229) 请求错误(0015:商户未配置第三方支付账号)
+
+2018-01-19 16:20:48 下单(1516350046128)发送报文: {"merOrderNo":"1516350046128","orderTitle":"支付测试demo","orderDesc":"描述","payPlat":"alipay","orderAmt":"2","notifyUrl":"http:\/\/photo123.cn\/phpdemo\/pay_notify.php","callbackUrl":"http:\/\/photo123.cn\/phpdemo\/pay_result.php","merId":"100000010000015","version":"1.0.0","sign":"16097d4ee2e8fcc18b857b36da3c3fde"}
+
+2018-01-19 16:20:48 下单(1516350046128)返回报文: {"respCode":"0015","respMsg":"商户未配置第三方支付账号"}
+
+2018-01-19 16:20:48 下单(1516350046128) 请求错误(0015:商户未配置第三方支付账号)
+
+2018-01-19 16:21:01 下单(1516350055776)发送报文: {"merOrderNo":"1516350055776","orderAmt":"1","payPlat":"wxpay","orderTitle":"订单标题Test","orderDesc":"1213123","notifyUrl":"http:\/\/photo123.cn\/phpdemo\/pay_notify.php","callbackUrl":"http:\/\/photo123.cn\/phpdemo\/pay_result.php","merId":"100000010000015","version":"1.0.0","sign":"8ca264446e754d190d7b1ff96a47861f"}
+
+2018-01-19 16:21:01 下单(1516350055776)返回报文: {"respCode":"0021","respMsg":"商户未开通该支付产品"}
+
+2018-01-19 16:21:01 下单(1516350055776) 请求错误(0021:商户未开通该支付产品)
+
+2018-01-19 16:21:21 下单(1516350079736)发送报文: {"merOrderNo":"1516350079736","orderTitle":"支付测试demo","orderDesc":"描述","payPlat":"alipay","orderAmt":"1","notifyUrl":"http:\/\/photo123.cn\/phpdemo\/pay_notify.php","callbackUrl":"http:\/\/photo123.cn\/phpdemo\/pay_result.php","merId":"100000010000015","version":"1.0.0","sign":"ac7a004bc211732c4336c248e3693306"}
+
+2018-01-19 16:21:21 下单(1516350079736)返回报文: {"respCode":"0015","respMsg":"商户未配置第三方支付账号"}
+
+2018-01-19 16:21:21 下单(1516350079736) 请求错误(0015:商户未配置第三方支付账号)
+
+2018-01-19 16:21:24 下单(1516350083401)发送报文: {"merOrderNo":"1516350083401","orderTitle":"支付测试demo","orderDesc":"描述","payPlat":"alipay","orderAmt":"1","notifyUrl":"http:\/\/photo123.cn\/phpdemo\/pay_notify.php","callbackUrl":"http:\/\/photo123.cn\/phpdemo\/pay_result.php","merId":"100000010000015","version":"1.0.0","sign":"c943e86666e9ce1b733a51a389c80d88"}
+
+2018-01-19 16:21:24 下单(1516350083401)返回报文: {"respCode":"0015","respMsg":"商户未配置第三方支付账号"}
+
+2018-01-19 16:21:24 下单(1516350083401) 请求错误(0015:商户未配置第三方支付账号)
+
+2018-01-19 16:22:17 下单(1516350136558)发送报文: {"merOrderNo":"1516350136558","orderTitle":"支付测试demo","orderDesc":"描述","payPlat":"wxpay","orderAmt":"1","notifyUrl":"http:\/\/photo123.cn\/phpdemo\/pay_notify.php","callbackUrl":"http:\/\/photo123.cn\/phpdemo\/pay_result.php","merId":"100000010000015","version":"1.0.0","sign":"9549ab9fedf65db6e680b509f43ec3bb"}
+
+2018-01-19 16:22:17 下单(1516350136558)返回报文: {"respCode":"0021","respMsg":"商户未开通该支付产品"}
+
+2018-01-19 16:22:17 下单(1516350136558) 请求错误(0021:商户未开通该支付产品)
+

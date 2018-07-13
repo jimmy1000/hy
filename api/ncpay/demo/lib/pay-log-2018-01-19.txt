@@ -1,0 +1,67 @@
+2018-01-19 13:40:03 wap下单(1516340384369)生成签名: 4d85058c7f730a5287a307f80b6051e1
+
+2018-01-19 13:40:03 wap下单(1516340384369) 请求错误(1002:订单号重复)
+
+2018-01-19 13:40:24 wap下单(1516340418505)生成签名: e09f349f83b79907582510f3d253fbf2
+
+2018-01-19 13:41:08 wap下单(1516340467160)生成签名: 1a84f2e47d09925c2b3ee06ad3a9574e
+
+2018-01-19 13:41:08 wap下单(1516340467160)请求返回内容: {"respCode":"0000","respMsg":"请求成功","payNo":"2018011913410879063457729","merOrderNo":"1516340467160","jumpUrl":"http://payapi.yuguang168.com/grmApp/pay.do?id=2018011913410879063457729","realAmt":"1.01"}
+
+2018-01-19 13:57:59 下单(1516341477474)发送报文: {"merId":"100000010000015","merOrderNo":"1516341477474","orderAmt":"1","payPlat":"wxpay","orderTitle":"订单标题Test","orderDesc":"1213123","notifyUrl":"http:\/\/127.0.0.1\/test_notify.php","callbackUrl":"http:\/\/127.0.0.1\/test_notify.php","version":"1.0.0","sign":"62efcff0012d4d7eb364acd6767373fc"}
+
+2018-01-19 13:57:59 下单(1516341477474)请求返回内容: {"respCode":"0000","respMsg":"请求成功","payNo":"2018011913575986949516665","merOrderNo":"1516341477474","jumpUrl":"http://payapi.yuguang168.com/grmApp/pay.do?id=2018011913575986949516665","realAmt":"1.11"}
+
+2018-01-19 13:57:59 下单(1516341477474)返回报文: Array
+
+2018-01-19 14:00:33 下单(1516341632136)发送报文: {"merId":"100000010000015","merOrderNo":"1516341632136","orderAmt":"1","payPlat":"wxpay","orderTitle":"订单标题Test","orderDesc":"1213123","notifyUrl":"http:\/\/127.0.0.1\/test_notify.php","callbackUrl":"http:\/\/127.0.0.1\/test_notify.php","version":"1.0.0","sign":"213c813331af9dcd614944bc5ad7d4e7"}
+
+2018-01-19 14:00:34 下单(1516341632136)请求返回报文: {"respCode":"0000","respMsg":"请求成功","payNo":"2018011914003406315866924","merOrderNo":"1516341632136","jumpUrl":"http://payapi.yuguang168.com/grmApp/pay.do?id=2018011914003406315866924","realAmt":"1.12"}
+
+2018-01-19 14:01:38 下单(1516341697207)发送报文: {"merId":"100000010000015","merOrderNo":"1516341697207","orderAmt":"1","payPlat":"wxpay","orderTitle":"订单标题Test","orderDesc":"1213123","notifyUrl":"http:\/\/127.0.0.1\/test_notify.php","callbackUrl":"http:\/\/127.0.0.1\/test_notify.php","version":"1.0.0","sign":"2fd0baadf9bfce61ad8d2603a3c819dd"}
+
+2018-01-19 14:01:38 下单(1516341697207)请求返回报文: {"respCode":"0000","respMsg":"请求成功","payNo":"2018011914013879724466010","merOrderNo":"1516341697207","jumpUrl":"http://payapi.yuguang168.com/grmApp/pay.do?id=2018011914013879724466010","realAmt":"1.20"}
+
+
+2018-01-19 14:22:54 查询订单(1516341697207)发送报文: {"merId":"100000010000015","version":"1.0.0","merOrderNo":"1516341697207","sign":"5be20da3b9df2be5c5dc8408ee903088"}
+
+2018-01-19 14:22:54 查询订单(1516341697207)返回报文: {"respCode":"0000","respMsg":"请求成功","payNo":"2018011914013879724466010","merOrderNo":"1516341697207","payStatus":"I","payDate":null,"payTime":null,"orderTitle":"订单标题Test","orderDesc":"1213123","orderAmt":"1.00","realAmt":"1.20"}
+
+2018-01-19 14:37:37 下单(1516343849973)发送报文: {"merOrderNo":"1516343849973","orderTitle":"支付测试demo","orderDesc":"描述","notifyUrl":"http:\/\/127.0.0.1\/test_notify.php","orderAmt":"2","payPlat":"wxpay","callbackUrl":"http:\/\/127.0.0.1\/test_notify.php","merId":"100000010000015","version":"1.0.0","sign":"5c7e6f3e8b0e7534935f1aad4ad17944"}
+
+2018-01-19 14:37:37 下单(1516343849973)返回报文: {"respCode":"0000","respMsg":"请求成功","payNo":"2018011914373730131103604","merOrderNo":"1516343849973","jumpUrl":"http://payapi.yuguang168.com/grmApp/pay.do?id=2018011914373730131103604","realAmt":"2.06"}
+
+2018-01-19 14:46:38 下单(1516344396134)发送报文: {"merOrderNo":"1516344396134","orderAmt":"1","payPlat":"alipay","orderTitle":"订单标题Test","orderDesc":"1213123","notifyUrl":"http:\/\/127.0.0.1\/test_notify.php","callbackUrl":"http:\/\/127.0.0.1\/test_notify.php","merId":"100000010000015","version":"1.0.0","sign":"bf40f1985c9382e2c511b5505c76286e"}
+
+2018-01-19 14:46:38 下单(1516344396134)返回报文: {"respCode":"0015","respMsg":"商户未配置第三方支付账号"}
+
+2018-01-19 14:46:38 下单(1516344396134) 请求错误(0015:商户未配置第三方支付账号)
+
+2018-01-19 14:46:45 下单(1516344404743)发送报文: {"merOrderNo":"1516344404743","orderTitle":"支付测试demo","orderDesc":"描述","payPlat":"alipay","orderAmt":"1","notifyUrl":"http:\/\/127.0.0.1\/test_notify.php","callbackUrl":"http:\/\/127.0.0.1\/test_notify.php","merId":"100000010000015","version":"1.0.0","sign":"eaf3b4254a985f191890162a9de8cc35"}
+
+2018-01-19 14:46:45 下单(1516344404743)返回报文: {"respCode":"0015","respMsg":"商户未配置第三方支付账号"}
+
+2018-01-19 14:46:45 下单(1516344404743) 请求错误(0015:商户未配置第三方支付账号)
+
+2018-01-19 14:47:11 下单(1516344424651)发送报文: {"merOrderNo":"1516344424651","orderAmt":"1","payPlat":"wxpay","orderTitle":"订单标题Test","orderDesc":"1213123","notifyUrl":"http:\/\/127.0.0.1\/test_notify.php","callbackUrl":"http:\/\/127.0.0.1\/test_notify.php","merId":"100000010000015","version":"1.0.0","sign":"49040a8feaf58447e976c14f3ee6c446"}
+
+2018-01-19 14:47:11 下单(1516344424651)返回报文: {"respCode":"0021","respMsg":"商户未开通该支付产品"}
+
+2018-01-19 14:47:11 下单(1516344424651) 请求错误(0021:商户未开通该支付产品)
+
+2018-01-19 15:34:28 签名错误
+
+2018-01-19 15:35:09 支付通知回调签名错误
+
+2018-01-19 15:35:11 支付通知回调签名错误
+
+2018-01-19 16:18:27 下单(1516349902534)发送报文: {"merOrderNo":"1516349902534","orderTitle":"支付测试demo","orderDesc":"描述","orderAmt":"1","payPlat":"alipay","notifyUrl":"http:\/\/127.0.0.1\/phpdemo\/pay_notify.php","callbackUrl":"http:\/\/127.0.0.1\/phpdemo\/pay_result.php","merId":"100000010000015","version":"1.0.0","sign":"4bdbeed62cba1692103712b750c17388"}
+
+2018-01-19 16:18:27 下单(1516349902534)返回报文: {"respCode":"0015","respMsg":"商户未配置第三方支付账号"}
+
+2018-01-19 16:18:27 下单(1516349902534) 请求错误(0015:商户未配置第三方支付账号)
+
+2018-01-19 16:18:31 下单(1516349910805)发送报文: {"merOrderNo":"1516349910805","orderTitle":"支付测试demo","orderDesc":"描述","orderAmt":"1","payPlat":"wxpay","notifyUrl":"http:\/\/127.0.0.1\/phpdemo\/pay_notify.php","callbackUrl":"http:\/\/127.0.0.1\/phpdemo\/pay_result.php","merId":"100000010000015","version":"1.0.0","sign":"246041977645e52ff5020d858fe46016"}
+
+2018-01-19 16:18:31 下单(1516349910805)返回报文: {"respCode":"0000","respMsg":"请求成功","payNo":"2018011916183181889445572","merOrderNo":"1516349910805","jumpUrl":"http://payapi.yuguang168.com/grmApp/pay.do?id=2018011916183181889445572","realAmt":"1.13"}
+
