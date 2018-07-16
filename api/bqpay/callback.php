@@ -6,7 +6,7 @@ $form = '<form action="'.$callbackurl.'" >';
 foreach($_REQUEST as $k => $v){
     $form .= "<input type='text' name='$k' value='$v' />";
 }
-$form .="<input type='submit'><form/><br>";
+$form .="<input type='submit'></form><br>";
 file_put_contents(dirname(__FILE__).'/log.html', $form."\r\n",FILE_APPEND);
 
 
